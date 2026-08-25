@@ -7,7 +7,7 @@ def main():
         if command == "exit":
             break
         else:
-            print(f"{command}: command not found")
+            print(command[5:])
 
 
 if __name__ == "__main__":
