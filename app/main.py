@@ -12,6 +12,8 @@ def main():
                 print(f"{command} is a shell builtin")
             else:
                 print(f"{command}: not found")
+        elif command == "exit":
+            break
         else:
             print(f"{command}: command not found")
 
