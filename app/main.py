@@ -4,12 +4,10 @@ import sys
 def main():
     while True:
         command = input("$ ")
-        if command.startswith("echo"):
-            print(command[5:])
-        elif command == "exit":
-            break
+        if command == "exit" or command == "type" or command == "echo":
+            print(f"{command} is a shell builtin")
         else:
-            print(f"{command}: command not found")
+            print(f"{command}: not found")
 
 
 if __name__ == "__main__":
